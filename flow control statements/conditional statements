@@ -1,0 +1,50 @@
+#conditional statements -decides the excution of code based on the condition of the program
+#condiotional statements include:if statements,if else statements,if elif statements,nested if statements
+
+#if statements-if the condition is correct then the code will be excuted
+a=20
+if a>2:#used when we have only one condition
+
+    print("a is greater than 2")
+elif a==5:#used when we have more than 2 conditions
+    print("a is equal to 20")
+
+else:#used when the condiotion is false
+    print("a is less than 2")    
+   
+  #example of if statement in real life
+
+pin_given=1978
+balance=1000
+
+print("welcome to SBI")
+
+i=1
+while i<=3:
+
+    pin=int (input("enter your pin number:"))
+    if pin==pin_given:
+        print("welcome to our services")
+        print("select options")
+        print("1.withdraw")
+        print("2.deposit")
+        print("3.balance inquiry")
+        options=int(input("enter your choice:"))
+        if options==1:
+            withdrawal=int(input("enter the amount:"))
+            if withdrawal>balance:
+                print("insufficient funds")
+            else:
+                print("collect you cash")
+                print("your balance is", balance-withdrawal)
+        elif options==2:#nested if statement
+            print("enter amount") 
+        elif options==3:
+            print("your balance is",balance)
+        else:
+            print("invalid option")      
+    else:
+        print("wrong pin")
+        break
+else:
+    print("card blocked")
