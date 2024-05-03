@@ -37,6 +37,8 @@ while i<=3:
             else:
                 print("collect you cash")
                 print("your balance is", balance-withdrawal)
+                print("withdrawal successful")
+                break
         elif options==2:#nested if statement
             print("enter amount") 
         elif options==3:
@@ -45,6 +47,7 @@ while i<=3:
             print("invalid option")      
     else:
         print("wrong pin")
-        break
+    
 else:
     print("card blocked")
+    
