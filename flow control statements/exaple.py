@@ -16,3 +16,7 @@ elif no==1:
 
 else:
     print(no,"is not a prime number")
+#code to check leap years
+def year():
+    
+
