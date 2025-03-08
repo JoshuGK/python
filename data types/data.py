@@ -13,6 +13,7 @@ print(t[1:4])
 #combining two strings
 d="come"
 print(t+d)
+print(d)
 
 #assignment= write a program to read employee data from the keyboard and print the data which includes employer address salary and name
 
